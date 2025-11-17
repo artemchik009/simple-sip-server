@@ -1,35 +1,42 @@
-# Node.js SIP Server with User-to-User Calling (WORK IN PROGRESS!!!!)
+# Node.js SIP Server with Phone Extensions (2025)
 
-A lightweight, production-ready SIP server built entirely in Node.js using **Drachtio**.  
-Allows users to register with SIP clients and call each other by username (e.g., `sip:alice@mydomain.com` → `sip:bob@mydomain.com`).
+A lightweight, fully functional SIP server written **100% in Node.js** that lets users call each other using **short phone numbers / extensions** (e.g. 100, 101, 202, 5000).
 
-Perfect for private VoIP networks, WebRTC gateways, IoT telephony, or learning SIP internals.
+No Asterisk, no Kamailio, no FreeSWITCH required.
+
+Perfect for:
+- Private office PBX
+- Home labs
+- IoT telephony projects
+- WebRTC gateways
+- Learning SIP internals
+
+Works today (November 2025) with Zoiper, Linphone, MicroSIP, Groundwire, Jitsi, Bria, etc.
 
 ## Features
 
-- Full SIP registrar with location service
-- Direct user-to-user calling (B2BUA routing)
-- Pre-register users via CLI script (no SIP REGISTER required for user creation)
-- SQLite storage for users and registrations (persists across restarts)
-- Passwords hashed with bcrypt
-- Zero external dependencies (no Asterisk, Kamailio, FreeSWITCH required)
+- Dial by short extension/number (e.g. just dial **101**)
+- User management via simple CLI script
+- Persistent user database (SQLite)
+- Secure password storage (bcrypt)
+- Full registrar + location service
+- Direct user-to-user calling (B2BUA)
+- Zero external SIP servers needed
+  
 
-
-Tested and working in 2025 with all major softphones (Zoiper, Linphone, MicroSIP, Groundwire, Jitsi, etc.).
-
-## Quick Start
+## Quick Start (less than 2 minutes)
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/nodejs-sip-server.git
-cd nodejs-sip-server
-
-# 2. Install dependencies
+git clone https://github.com/artemchik009/simple-sip-server.git
+cd simple-sip-server 
 npm install
 
-# 3. Create your first users
+# Create users with phone extensions
 node register-user.js
-# → follow prompts (e.g., username: alice, password: secret123)
+# Example:
+#   Extension: 100
+#   Username : alice
+#   Password : secret123
 
-# 4. Start the SIP server
+# Start the SIP server
 node server.js
