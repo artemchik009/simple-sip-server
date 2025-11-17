@@ -1,4 +1,4 @@
-# Node.js SIP Server with User-to-User Calling
+# Node.js SIP Server with User-to-User Calling (WORK IN PROGRESS!!!!)
 
 A lightweight, production-ready SIP server built entirely in Node.js using **Drachtio**.  
 Allows users to register with SIP clients and call each other by username (e.g., `sip:alice@mydomain.com` → `sip:bob@mydomain.com`).
