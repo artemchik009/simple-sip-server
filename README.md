@@ -13,7 +13,7 @@ Perfect for private VoIP networks, WebRTC gateways, IoT telephony, or learning S
 - SQLite storage for users and registrations (persists across restarts)
 - Passwords hashed with bcrypt
 - Zero external dependencies (no Asterisk, Kamailio, FreeSWITCH required)
-- Easy to extend: TLS, WebSocket, Redis, REST API, CDR, etc.
+
 
 Tested and working in 2025 with all major softphones (Zoiper, Linphone, MicroSIP, Groundwire, Jitsi, etc.).
 
