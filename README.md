@@ -1,4 +1,4 @@
-# Node.js SIP Server with Phone Extensions (2025)
+# Node.js simple SIP Server
 
 A lightweight, fully functional SIP server written **100% in Node.js** that lets users call each other using **short phone numbers / extensions** (e.g. 100, 101, 202, 5000).
 
