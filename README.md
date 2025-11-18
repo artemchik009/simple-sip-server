@@ -27,8 +27,8 @@ Works today (November 2025) with Zoiper, Linphone, MicroSIP, Groundwire, Jitsi, 
 ## Quick Start (less than 2 minutes)
 
 ```bash
-git clone https://github.com/artemchik009/simple-sip-server.git
-cd simple-sip-server 
+git clone https://github.com/Artemchik-Studio/simple-sip-server.git
+cd simple-sip-server  
 npm install
 
 # Create users with phone extensions
